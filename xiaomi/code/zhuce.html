@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>注册</title>
+
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				font-style: normal;
+				font-weight: normal;
+				text-decoration: none;
+				list-style: none;
+			}
+
+			a {
+				text-decoration: none;
+				color: #333;
+			}
+
+			body {
+				background: #f9f9f9;
+			}
+
+			#a1 {
+				width: 1070px;
+				height: 685px;
+				background: #ffffff;
+				margin: 55px auto;
+			}
+
+			.a2 {
+				display: block;
+				margin: 0 auto;
+			}
+
+			.a3 {
+				height: 147px;
+				width: 1070px;
+				text-align: center;
+				font-size: 35px;
+				line-height: 147px;
+				color: #333333;
+			}
+
+			.box {
+				width: 431px;
+				height: 408px;
+				margin: 0 auto;
+			}
+
+			.row {
+				width: 431px;
+				height: 120px;
+				display: inline-block;
+			}
+
+			.aaaa {
+				width: 431px;
+				height: 40px;
+				display: block;
+				line-height: 40px;
+				font-size: 17px;
+				color: #333333;
+			}
+
+			#username {
+				border: 2px solid grey;
+				width: 413px;
+				height: 50px;
+				font-size: 15px;
+			}
+
+			.aaab {
+				width: 300px;
+				height: 34px;
+				font-size: 16px;
+				line-height: 34px;
+				color: #666666;
+			}
+
+			#password {
+				border: 2px solid grey;
+				width: 413px;
+				height: 50px;
+				font-size: 15px;
+			}
+
+			#repasswd {
+				border: 2px solid grey;
+				width: 413px;
+				height: 50px;
+				font-size: 15px;
+			}
+
+			.aaac {
+				width: 412px;
+				height: 53px;
+				background: #ff6700;
+				border: none;
+				color: white;
+				font-size: 18px;
+			}
+
+			.c1 {
+				margin-left: 380px;
+				margin-top: 40px;
+				font-size: 16px;
+				color: #9d9d9d;
+			}
+
+			span {
+				font-weight: bold;
+				color: #333;
+			}
+
+			.fot {
+				width: 705px;
+				height: 108px;
+				margin: 0 auto;
+			
+			}
+
+			.fot1 {
+				width: 333px;
+				height: 47px;
+				margin: 0 auto;
+				
+			}
+
+			.fot2 {
+				float: left;
+				text-align: center;
+				font-size: 17px;
+				color: #333333;
+				line-height: 18px;
+				width: 68px;
+				height: 18px;
+				border-right: 1px solid #b59d9d;
+				margin-top: 15px;
+				cursor:pointer;
+			}
+			.fot3 {
+				float: left;
+				text-align: center;
+				font-size: 17px;
+				color: #757575;
+				line-height: 18px;
+				width: 68px;
+				height: 18px;
+				border-right: 1px solid #b59d9d;
+				margin-top: 15px;
+				cursor:pointer;
+			}
+			.fot4 {
+				float: left;
+				text-align: center;
+				font-size: 17px;
+				color: #757575;
+				line-height: 18px;
+				width: 96px;
+				height: 18px;
+				border-right: 1px solid #b59d9d;
+				margin-top: 15px;
+				cursor:pointer;
+			}
+			.fot3:hover{color: #333;}
+			.fot4:hover{color: #333;}
+		</style>
+	</head>
+	<body>
+		<div id="a1">
+			<img src="../img/mimi.png" class="a2">
+			<div class="a3">
+				注册小米账号
+			</div>
+			<div class="box">
+				<form id="myform">
+					<div class="row">
+						<label for="username" class="aaaa">用户名</label>
+						<input type="text" name="username" id="username" placeholder="请输入用户名" required />
+						<div class="aaab">
+							成功注册账号后，用户名不能被修改
+						</div>
+					</div>
+					<div class="row">
+						<label for="password" class="aaaa">密 码</label>
+						<input type="password" name="password" id="password" placeholder="请输入密码" required />
+					</div>
+					<div class="row">
+						<label for="repasswd" class="aaaa">确认密码</label>
+						<input type="password" name="repasswd" id="repasswd" placeholder="请重新输入密码" required />
+					</div>
+					<div class="row">
+						<button class="aaac">立即注册</button>
+					</div>
+				</form>
+			</div>
+			<div class="c1">
+				已阅读并同意：小米<span> 用户协议 </span>和<span> 隐私政策</span>
+			</div>
+		</div>
+		<div class="fot">
+			<div class="fot1">
+				<div class="fot2">
+					简体
+				</div>
+				<div class="fot3">
+					繁体
+				</div>
+				<div class="fot4">
+					English
+				</div>
+				<div class="fot4">
+					常见问题
+				</div>
+			</div>
+			<img src="../img/yanzheghao.png" >
+		</div>
+		<script src="./lianxiajax.js"></script>
+		<script>
+			var myformEle = document.getElementById('myform');
+			myformEle.addEventListener('submit', function(e) {
+				e.preventDefault();
+				var username = this.username.value;
+				var password = this.password.value;
+				var repasswd = this.repasswd.value
+				ajax({
+					type: 'post',
+					url: 'register.php',
+					data: {
+						username,
+						password,
+						repasswd
+					}
+				}).then(res => {
+					alert(res.msg);
+					switch (res.code) {
+						case 2:
+							location = '/denglu.html';
+							break;
+						case -1:
+							this.username.value = '';
+							this.username.focus();
+							break;
+						case -2:
+							this.repasswd.value = '';
+							this.repasswd.focus();
+						default:
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

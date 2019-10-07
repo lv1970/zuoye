@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米金融</title>
+		<link rel="stylesheet" type="text/css" href="../css/1.css" />
+		<style type="text/css">
+			#head {
+				width: 100%;
+				height: 42px;
+				background: #333;
+			}
+
+			#head1 {
+				width: 1260px;
+				height: 42px;
+				background: #333;
+				margin: 0 auto;
+			}
+
+			#head2 {
+				width: 385px;
+				height: 42px;
+				float: left;
+				color: #fff;
+				font-size: 12px;
+				line-height: 42px;
+			}
+
+			#head3 {
+				width: 70px;
+				height: 42px;
+				float: right;
+				color: #fff;
+				font-size: 12px;
+				line-height: 42px;
+			}
+
+			#ban {
+				width: 1260px;
+				height: 105px;
+				margin: 0 auto;
+			}
+
+			#ban1 {
+				margin-top: 25px;
+				display: block;
+				float: left;
+			}
+
+			#ban2 {
+				width: 537px;
+				height: 105px;
+				float: right;
+			}
+
+			#ban3 {
+				float: left;
+				height: 105px;
+				font-size: 17px;
+				color: #212121;
+				line-height: 105px;
+				margin-left: 50px;
+			}
+			#mask {
+			  width: 1500px;
+			  height: 673px;
+			  margin: 0 auto;
+			  position: relative;
+			  overflow: hidden;
+			}
+			
+			#ul {
+			  width: 7500px;
+			  height: 673px;
+			  position: absolute;
+			  left: 0;
+			}
+			
+			#ul li {
+			  width: 1500px;
+			  height: 673px;
+			  float: left;
+			}
+			
+			#ul li img {
+			  width: 1500px;
+			  height: 673px;
+			}
+			
+			span {
+			  position: absolute;
+			  width: 52px;
+			  height: 52px;
+			  top: 50%;
+			  margin-top: -26px;
+			  display: none;
+			}
+			
+			#al {
+			  background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/left_arrow.svg?v=2);
+			  left: 20px;
+			}
+			
+			#ar {
+			  background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/right_arrow.svg?v=2);
+			  right: 20px;
+			}
+			
+			#ar:hover {
+			  background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/right_arrowhover.svg?v=2);
+			}
+			
+			#al:hover {
+			  background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/left_arrowhover.svg?v=2);
+			}
+			
+			#mask:hover span {
+			  display: block;
+			}
+			
+			#page {
+			  padding: 5px;
+			  width: 80px;
+			  position: absolute;
+			  left: 50%;
+			  bottom: 10px;
+			  margin-left: -40px;
+			}
+			
+			#page p {
+			  width: 10px;
+			  height: 10px;
+			  border-radius: 50%;
+			  margin-right: 10px;
+			  float: left;
+			  background-color: rgba(255, 255, 255, 0.5);
+			}
+			#dd{width:1258px;
+			height:470px ;
+			position: relative;
+			top: -83px;
+			left: 0px;
+			z-index: 999;
+			border: 1px solid #e6e6e6;
+			margin: 0 auto;
+			background: #fff;}
+		#dd1{width: 378px;
+			height: 438px;
+			float: left;
+			margin-top:32px ;
+			margin-left:32px ;
+			}
+		#dd3{width: 315px;
+			height: 164px;
+			margin: 0 auto;
+			border-bottom: 1px solid #e6e6e6;}
+		#dd4{width: 67px;
+			height: 112px;
+			float: left;
+			font-size:15px ;
+			line-height:37px ;
+			color: #ea5600;}
+		#dd5{width: 246px;
+		height: 112px;
+		float: left;
+		font-size:15px ;
+		line-height:37px ;
+		color: #666666;
+		}
+		#dd6{width:410px ;
+			height:62px ;
+			font-size:15px ;
+			color:#fd3911 ;
+			line-height:62px ;
+			text-align: center;}
+		#foot{width:1260px ;
+			height:110px;
+			margin: 0 auto;
+			}
+		#foot1{width:620px ;
+			height:50px ;
+			float: left;}
+		#foot2{display: block;
+		float: left;}
+		#foot3{width:555px ;
+			height:50px ;
+			float: left;
+			font-size:13px ;
+			line-height:30px ;
+			color: #575757;}
+		#foot4{width:200px ;
+			height:72px ;
+			float: right;
+			}
+		#foot5{width:200px ;
+			height: 15px;
+			font-size: 13px;
+			line-height: 15px;
+			color: #575757;}
+		#foot6{width:200px ;
+			height: 43px;
+			font-size: 20px;
+			line-height: 43px;
+			color: #e84519;}
+		#foot7{width:200px ;
+			height: 12px;
+			font-size: 12px;
+			line-height: 12px;
+			color: #575757;}
+		</style>
+	</head>
+	<body>
+		<div id="head">
+			<div id="head1">
+				<div id="head2">
+					小米网 丨 MIUI 丨 米聊 丨 游戏 丨 多看阅读 丨 云服务 丨 小米网移动版
+				</div>
+				<div id="head3">
+					登录 丨 注册
+				</div>
+			</div>
+		</div>
+		<div id="ban">
+			<img src="https://fundres.mipay.com/res/pc/images/logo_pc-3b3397d3de.png" id="ban1">
+			<div id="ban2">
+				<div id="ban3">
+					首页
+				</div>
+				<div id="ban3">
+					财富
+				</div>
+				<div id="ban3">
+					贷款
+				</div>
+				<div id="ban3">
+					资产
+				</div>
+				<div id="ban3">
+					社区
+				</div>
+				<div id="ban3">
+					客户端
+				</div>
+			</div>
+		</div>
+		<div id="mask">
+			<ul id="ul">
+				<li>
+					<img src="../img/jinrong4.jpg" alt="" />
+				</li>
+				<li>
+					<img src="../img/jinrong1.jpg" alt="" />
+				</li>
+				<li>
+					<img src="../img/jinrong3.jpg" alt="" />
+				</li>
+				<li>
+					<img src="../img/jinrong2.jpg" alt="" />
+				</li>
+				<li>
+					<img src="../img/jinrong4.jpg" alt="" />
+				</li>
+			</ul>
+			<span id="al"></span>
+			<span id="ar"></span>
+			<div id="page">
+				<p style="background-color: rgba(255, 255, 255, 1);" class="pp"></p>
+				<p class="pp"></p>
+				<p class="pp"></p>
+				<p class="pp"></p>
+			</div>
+		</div>
+		<div id="dd">
+			<div id="dd1">
+				<img src="../img/caifu.png" >
+				<div id="dd3">
+					<div id="dd4">
+						小米官方安全可靠优质产品
+					</div>
+					<div id="dd5">
+						丨 米家的综合财富平台<br>丨 严控资金，多重分控审核<br>丨 知名合作伙伴，精选理财产品
+					</div>
+				</div>
+				<div id="dd6">
+					了解更多 >
+				</div>
+			</div>
+			<div id="dd1">
+				<img src="../img/daikuan.png" >
+				<div id="dd3">
+					<div id="dd4">
+						小米官方安全可靠优质产品
+					</div>
+					<div id="dd5">
+						丨 米家的综合财富平台<br>丨 严控资金，多重分控审核<br>丨 知名合作伙伴，精选理财产品
+					</div>
+				</div>
+				<div id="dd6">
+					了解更多 >
+				</div>
+			</div>
+			<div id="dd1">
+				<img src="../img/baoxian.png" >
+				<div id="dd3">
+					<div id="dd4">
+						小米官方安全可靠优质产品
+					</div>
+					<div id="dd5">
+						丨 米家的综合财富平台<br>丨 严控资金，多重分控审核<br>丨 知名合作伙伴，精选理财产品
+					</div>
+				</div>
+				<div id="dd6">
+					了解更多 >
+				</div>
+			</div>
+		</div>
+		<div id="foot">
+			<div id="foot1">
+				<img src="../img/banzhu.png" id="foot2">
+				<div id="foot3">
+					帮助中心 丨 关注我们 丨 新浪微博<br>Copyright&copy;mi.com京ICP备1004644号-7 丨 京公网安备 11010802020134号 丨 京ICP证1100507号
+				</div>
+			</div>
+			<div id="foot4">
+				<div id="foot5">
+					客服电话
+				</div>
+				<div id="foot6">
+					400-100-3399
+				</div>
+				<div id="foot7">
+					周一至周日9：00-19:00（仅收市话费）
+				</div>
+			</div>
+		</div>
+		<script>
+			var al = document.querySelector("#al");
+			//左面按钮
+			var ar = document.querySelector("#ar");
+			//右面按钮
+			var lunbo = document.querySelector("#ul");
+			//轮播主体
+			var ll = document.querySelector("#mask");
+			//整体
+			var pp = document.querySelectorAll(".pp");
+			//页码圆圈
+			var i = 0;
+			var timer1;
+			fn();
+			//绑定按钮点击事件
+			ar.onclick = function() {
+				if (i >= 4) {
+					i = 0;
+					lunbo.style.left = 0;
+				}
+				i++;
+				move(lunbo, "right", -1500 * i);
+				fn2();
+			};
+			al.onclick = function() {
+				if (i <= 0) {
+					i = 4;
+					lunbo.style.left = -6000 + "px";
+				}
+				i--;
+				move(lunbo, "left", -1500 * i);
+				fn2();
+				//调用fn2函数
+			};
+			//鼠标在轮播图上 图停  移开 继续
+			ll.onmouseover = function() {
+				clearInterval(timer1);
+			};
+			ll.onmouseout = function() {
+				fn();
+			};
+
+			function fn() {
+				//设置定时器
+				timer1 = setInterval(() => {
+					if (i >= 4) {
+						i = 0;
+						ul.style.left = 0;
+					}
+					i++;
+					move(lunbo, "right", -1500 * i);
+					fn2();
+				}, 5040); //时间4秒一循环
+			}
+
+			function move(ele, dir, end) { //对象，方向，终点位置
+				if (dir == "right") {
+					clearInterval(ele.timer); //清除定时器
+					ele.timer = setInterval(() => {
+						var _left = ele.offsetLeft; //左侧距离//获取当前距离
+
+						var tween = (end - _left) / 10; //减速运动
+						tween = tween > 0 ? Math.ceil(tween) : Math.floor(tween); //三元判断 向上、向下取整
+						var start = _left + tween;
+						if (ele.offsetLeft <= end) { //判断临界条件停止
+							clearInterval(ele.timer);
+							ele.style.left = end + "px";
+						}
+						ele.style.left = start + 'px';
+					}, 30); //图片轮播速度
+				} else if (dir == "left") {
+					clearInterval(ele.timer);
+					ele.timer = setInterval(() => {
+						var _right = ele.offsetLeft;
+						var tween1 = (end - _right) / 10;
+						tween1 = tween1 > 0 ? Math.ceil(tween1) : Math.floor(tween1);
+						var start1 = _right + tween1;
+						// ele.style.left = _right + 10 + "px";
+						if (ele.offsetLeft >= end) {
+							clearInterval(ele.timer);
+							ele.style.left = end + "px";
+						}
+						ele.style.left = start1 + 'px';
+					}, 30);
+				}
+			}
+			for (let k = 0; k < pp.length; k++) {
+				pp[k].onclick = function() { //页码绑定点击事件
+					move(lunbo, k > i ? "right" : "left", -1500 * k);
+					i = k;
+					fn2();
+				};
+			}
+
+			function fn2() {
+				for (var n = 0; n < pp.length; n++) {
+					pp[n].style.background = "rgba(255, 255, 255, 0.5)";
+				}
+				pp[i === 4 ? 0 : i].style.background = "rgba(255, 255, 255, 1)";
+			} //页码样式设置
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/1.css"/>
+		<style type="text/css">
+			#head {
+				width: 100%;
+				height: 42px;
+				background: #333;
+			}
+			
+			#head1 {
+				width: 1226px;
+				height: 42px;
+				background: #333;
+				margin: 0 auto;
+			}
+			
+			#head2 {
+				width: 385px;
+				height: 42px;
+				float: left;
+				color: #fff;
+				font-size: 12px;
+				line-height: 42px;
+			}
+			
+			#head3 {
+				width: 70px;
+				height: 42px;
+				float: right;
+				color: #fff;
+				font-size: 12px;
+				line-height: 42px;
+			}
+			#dao{width:1226px ;
+				height:100px ;
+				margin: 0 auto;}
+			#dao1{width:170px ;
+				height:100px ;
+				float: left;}
+			#dao2{width: 730px;
+				height: 100px;
+				float: left;}
+			#dao3{height: 100px;
+				float: left;
+				line-height: 100px;
+				font-size:14px ;
+				color:#333 ;
+				text-indent:21px ;}
+			#dao4{width: 243px;
+				height: 48px;
+				border: 1px solid #e0e0e0;
+				float: left;
+				margin-top: 25px;}
+			#dao5{width: 50px;
+				height: 48px;
+				border: 1px solid #e0e0e0;
+				float: left;
+				margin-top: 25px;
+				border-left: none;}
+			#mask {
+			  width: 1226px;
+			  height: 460px;
+			  margin: 0 auto;
+			  position: relative;
+			  overflow: hidden;
+			}
+			
+			#ul {
+			  width: 6130px;
+			  height: 460px;
+			  position: absolute;
+			  left: 0;
+			}
+			
+			#ul li {
+			  width: 1226px;
+			  height: 460px;
+			  float: left;
+			}
+			
+			#ul li img {
+			  width: 1226px;
+			  height: 460px;
+			}
+			
+			span {
+			  position: absolute;
+			  width: 52px;
+			  height: 52px;
+			  top: 50%;
+			  margin-top: -26px;
+			  display: none;
+			}
+			
+			#al {
+			  background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/left_arrow.svg?v=2);
+			  left: 10px;
+			}
+			
+			#ar {
+			  background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/right_arrow.svg?v=2);
+			  right: 300px;
+			}
+			
+			#ar:hover {
+			  background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/right_arrowhover.svg?v=2);
+			}
+			
+			#al:hover {
+			  background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/left_arrowhover.svg?v=2);
+			}
+			
+			#mask:hover span {
+			  display: block;
+			}
+			
+			#page {
+			  padding: 5px;
+			  width: 80px;
+			  position: absolute;
+			  left: 35%;
+			  bottom: 10px;
+			  margin-left: -40px;
+			}
+			
+			#page p {
+			  width: 10px;
+			  height: 10px;
+			  border-radius: 50%;
+			  margin-right: 10px;
+			  float: left;
+			  background-color: rgba(255, 255, 255, 0.5);
+			}
+			#ul1{width: 296px;
+				height: 460px;
+				position: relative;
+				left: 932px;
+				top: 0px;
+				z-index: 999;
+				background: red;
+				}
+			#hao{width: 1226px;
+				height: 170px;
+				margin: 0 auto;
+				margin-top: 15px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-bottom: 50px;}
+			#hao1{width:295px ;
+				height:170px ;}
+			#zhu{background:#f5f5f5 ;
+				height: 4180px;}
+			#zhu1{width: 1226px;
+				height: 460px;
+				margin: 0 auto;}
+			#zhu2{width: 1226px;
+				height: 86px;
+				
+				}
+			#zhu3{height: 86px;
+				width: 130px;
+				font-size: 21px;
+				color: #333333;
+				line-height: 86px;
+				float: left;
+				margin-top: 36px;
+				}
+			#zhu4{width: 92px;
+				height: 86px;
+				float: right;
+				margin-top: 36px;
+				line-height: 86px;
+				font-size:15px ;
+				color: #424242;}
+			.zhu5{
+			display: inline-block;
+			float: right;}
+			#zhu6{width: 1226px;
+			height: 339px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			}
+			#zhu9{width: 234px;
+				height: 339px;
+				position: relative;}
+			#zhu9:hover {
+				top: -3px;
+				position: relative;
+			}
+			#tann {
+				width: 234px;
+				height: 50px;
+				background: orangered;
+				position: absolute;
+				bottom: -50px;
+				left: 0px;
+				color: orange;
+				font-size: 12px;
+				text-align: center;
+				line-height: 50px;
+				display: none;
+				color: white;
+			}
+			
+			#zhu9:hover #tann {
+				display: block;
+				bottom: 0px;
+			}
+			#hou{width: 1226px;
+				height: 360px;
+				margin: 0 auto;
+				background: #fff;
+				margin-top: 29px;
+				margin-bottom: 105px;}
+			#hou1{width: 1226px;
+				height: 71px;
+				margin: 0 auto;
+				text-align: center;
+				font-size:32px ;
+				color:#424242 ;
+				line-height: 71px;
+				padding-top: 32px;}
+			#hou2{width:1226px ;
+				height: 13px;
+				text-align: center;
+				line-height: 13px;
+				font-size: 12px;
+				color: #333;}
+			#dou3{width: 1226px;
+				height: 224px;}
+			#mas{height: 155px;
+				background: #fff;
+				}
+			#mas1{width: 1226px;
+				height: 155px;
+				margin: 0 auto;}
+			#mas2{width: 305px;
+				height: 41px;
+				float: left;
+				margin-top: 57px;
+				border-right: 1px solid #e0e0e0;}
+			#mas3{float: left;
+				width: 145px;
+				height: 41px;}
+			.mas4{float: left;
+				width: 100px;
+				height: 41px;
+				font-size:14px ;
+				line-height:41px;
+				color: #616161;}
+			#mas5{width: 306px;
+				height: 41px;
+				float: left;
+				margin-top: 57px;
+				}
+			#di {
+				width: 1226px;
+				height: 300px;
+				background: #fafafa;
+				margin:0 auto;
+				
+			}
+			
+			.di1 {
+				margin-top: 30px;
+				float: left;
+			}
+			
+			#di2 {
+				width: 913px;
+				height: 15px;
+			
+				margin-top: 30px;
+				float: left;
+				margin-left: 4px;
+			}
+			
+			.di3 {
+				width: 50px;
+				height: 15px;
+				text-align: center;
+				border-right: 1px solid #B0B0B0;
+				line-height: 15px;
+				float: left;
+			}
+			
+			.di4 {
+				color: #757575;
+				line-height: 15px;
+				font-size: 12px;
+			}
+			
+			.di4:hover {
+				color: orangered;
+			}
+			
+			.di5:hover {
+				color: orangered;
+			}
+			
+			.di5 {
+				color: #b0b0b0;
+				font-size: 12px;
+				line-height: 17px;
+			}
+			
+			#di6 {
+				width: 817px;
+				height: 17px;
+			
+				float: left;
+				margin-left: 4px;
+			}
+			
+			
+			.di8 {
+				font-size: 10px;
+				line-height: 1px;
+				color: #878787;
+				float: right;
+			}
+			#foot{height: 96px;
+			background: #fafafa;
+			}
+			.zhong{width: 100%;
+				height: 50px;
+			background: #fafafa;}
+			#tu{margin-top: 55px;
+			margin-left: -66px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="head">
+			<div id="head1">
+				<div id="head2">
+					小米网 丨 MIUI 丨 米聊 丨 游戏 丨 多看阅读 丨 云服务 丨 小米网移动版
+				</div>
+				<div id="head3">
+					登录 丨 注册
+				</div>
+			</div>
+		</div>
+		<div id="dao">
+			<div id="dao1">
+				<img src="../img/qiyegou.png" >
+			</div>
+			<div id="dao2">
+				<div id="dao3">
+					新品·礼品卡
+				</div>
+				<div id="dao3">
+					手机·平板
+				</div>
+				<div id="dao3">
+					笔记本
+				</div>
+				<div id="dao3">
+					家电
+				</div>
+				<div id="dao3">
+					智能·路由器
+				</div>
+				<div id="dao3">
+					耳机·音箱
+				</div>
+				<div id="dao3">
+					生活·儿童
+				</div>
+				<div id="dao3">
+					配件·车品
+				</div>
+			</div>
+			<div id="dao4">
+			</div>
+			<div id="dao5">
+				<img src="../img/wenhao.png" >
+			</div>
+		</div>
+		<div id="mask">
+			<ul id="ul">
+				<li>
+					<img src="../img/qiyeg5.png" alt="" />
+				</li>
+				<li>
+					<img src="../img/qiyeg2.png" alt="" />
+				</li>
+				<li>
+					<img src="../img/qiyeg3.png" alt="" />
+				</li>
+				<li>
+					<img src="../img/qiyeg4.png" alt="" />
+				</li>
+				<li>
+					<img src="../img/qiyeg5.png" alt="" />
+				</li>
+			</ul>
+			<div id="ul1">
+				<img src="../img/dingyibo.png" >
+			</div>
+			<span id="al"></span>
+			<span id="ar"></span>
+			<div id="page">
+				<p style="background-color: rgba(255, 255, 255, 1);" class="pp"></p>
+				<p class="pp"></p>
+				<p class="pp"></p>
+				<p class="pp"></p>
+			</div>
+		</div>
+		<div id="hao">
+			<div id="hao1">
+				<img src="../img/jiqiren.png" >
+			</div>
+			<div id="hao1">
+				<img src="../img/jingjing.png" >
+			</div>
+			<div id="hao1">
+				<img src="../img/jingjing1.png" >
+			</div>
+			<div id="hao1">
+				<img src="../img/jingjing2.png" >
+			</div>
+		</div>
+		<div id="zhu">
+			<div id="zhu1">
+				<div id="zhu2">
+					<div id="zhu3">
+						新品 · 礼品卡
+					</div>
+					
+					<div id="zhu4">
+						查看全部<img src="../img/woc.png" class="zhu5">
+					</div>
+				</div>
+				<div id="zhu6">
+					<div id="zhu9">
+						<img src="../img/shouji399.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji2.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji3.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji4.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji5.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="zhu1">
+				<div id="zhu2">
+					<div id="zhu3">
+						新品 · 礼品卡
+					</div>
+					
+					<div id="zhu4">
+						查看全部<img src="../img/woc.png" class="zhu5">
+					</div>
+				</div>
+				<div id="zhu6">
+					<div id="zhu9">
+						<img src="../img/shouji399.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji2.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji3.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji4.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji5.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="zhu1">
+				<div id="zhu2">
+					<div id="zhu3">
+						新品 · 礼品卡
+					</div>
+					
+					<div id="zhu4">
+						查看全部<img src="../img/woc.png" class="zhu5">
+					</div>
+				</div>
+				<div id="zhu6">
+					<div id="zhu9">
+						<img src="../img/shouji399.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji2.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji3.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji4.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji5.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="zhu1">
+				<div id="zhu2">
+					<div id="zhu3">
+						新品 · 礼品卡
+					</div>
+					
+					<div id="zhu4">
+						查看全部<img src="../img/woc.png" class="zhu5">
+					</div>
+				</div>
+				<div id="zhu6">
+					<div id="zhu9">
+						<img src="../img/shouji399.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji2.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji3.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji4.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji5.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="zhu1">
+				<div id="zhu2">
+					<div id="zhu3">
+						新品 · 礼品卡
+					</div>
+					
+					<div id="zhu4">
+						查看全部<img src="../img/woc.png" class="zhu5">
+					</div>
+				</div>
+				<div id="zhu6">
+					<div id="zhu9">
+						<img src="../img/shouji399.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji2.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji3.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji4.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji5.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="zhu1">
+				<div id="zhu2">
+					<div id="zhu3">
+						新品 · 礼品卡
+					</div>
+					
+					<div id="zhu4">
+						查看全部<img src="../img/woc.png" class="zhu5">
+					</div>
+				</div>
+				<div id="zhu6">
+					<div id="zhu9">
+						<img src="../img/shouji399.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji2.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji3.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji4.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji5.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="zhu1">
+				<div id="zhu2">
+					<div id="zhu3">
+						新品 · 礼品卡
+					</div>
+					
+					<div id="zhu4">
+						查看全部<img src="../img/woc.png" class="zhu5">
+					</div>
+				</div>
+				<div id="zhu6">
+					<div id="zhu9">
+						<img src="../img/shouji399.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji2.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji3.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji4.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji5.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="zhu1">
+				<div id="zhu2">
+					<div id="zhu3">
+						新品 · 礼品卡
+					</div>
+					
+					<div id="zhu4">
+						查看全部<img src="../img/woc.png" class="zhu5">
+					</div>
+				</div>
+				<div id="zhu6">
+					<div id="zhu9">
+						<img src="../img/shouji399.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji2.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji3.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji4.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+					<div id="zhu9">
+						<img src="../img/shouji5.png" >
+						<div id="tann">
+							登录企业账户开始抢购
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="hou">
+				<div id="hou1">
+					采购流程
+				</div>
+				<div id="hou2">
+					采购仅需4步，2个工作日内完成审核，到账后5个工作日内发货
+				</div>
+				<div id="hou3">
+					<img src="../img/dada.png" >
+				</div>
+			</div>
+		</div>
+		<div id="mas">
+			<div id="mas1">
+				<div id="mas2">
+					<div id="mas3">
+						<img src="../img/xinlang.png" >
+					</div>
+					<div class="mas4">
+						新浪微博
+					</div>
+				</div>
+				<div id="mas2">
+					<div id="mas3">
+						<img src="../img/xinlang.png" >
+					</div>
+					<div class="mas4">
+						新浪微博
+					</div>
+				</div>
+				<div id="mas2">
+					<div id="mas3">
+						<img src="../img/xinlang.png" >
+					</div>
+					<div class="mas4">
+						新浪微博
+					</div>
+				</div>
+				<div id="mas5">
+					<div id="mas3">
+						<img src="../img/xinlang.png" >
+					</div>
+					<div class="mas4">
+						新浪微博
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="zhong">
+			
+		</div>
+		<div id="foot">
+			
+		
+		<div id="di">
+			<img src="../img/xima.png" class="di1">
+			<div id="di2">
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+				<div class="di3">
+					<a href="" class="di4">
+						小米网
+					</a>
+				</div>
+			</div>
+			<div id="di6">
+				<a href="" class="di5">
+					京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证<br>
+					京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证<br>
+					京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP证京ICP
+				</a>
+		
+			</div>
+			<img src="../img/heikeji.png" id="tu">
+		</div>
+		</div>
+		<script>
+			var al = document.querySelector("#al");
+			//左面按钮
+			var ar = document.querySelector("#ar");
+			//右面按钮
+			var lunbo = document.querySelector("#ul");
+			//轮播主体
+			var ll = document.querySelector("#mask");
+			//整体
+			var pp = document.querySelectorAll(".pp");
+			//页码圆圈
+			var i = 0;
+			var timer1;
+			fn();
+			//绑定按钮点击事件
+			ar.onclick = function() {
+				if (i >= 4) {
+					i = 0;
+					lunbo.style.left = 0;
+				}
+				i++;
+				move(lunbo, "right", -1226 * i);
+				fn2();
+			};
+			al.onclick = function() {
+				if (i <= 0) {
+					i = 4;
+					lunbo.style.left = -4904 + "px";
+				}
+				i--;
+				move(lunbo, "left", -1226 * i);
+				fn2();
+				//调用fn2函数
+			};
+			//鼠标在轮播图上 图停  移开 继续
+			ll.onmouseover = function() {
+				clearInterval(timer1);
+			};
+			ll.onmouseout = function() {
+				fn();
+			};
+		
+			function fn() {
+				//设置定时器
+				timer1 = setInterval(() => {
+					if (i >= 4) {
+						i = 0;
+						ul.style.left = 0;
+					}
+					i++;
+					move(lunbo, "right", -1226 * i);
+					fn2();
+				}, 5040); //时间4秒一循环
+			}
+		
+			function move(ele, dir, end) { //对象，方向，终点位置
+				if (dir == "right") {
+					clearInterval(ele.timer); //清除定时器
+					ele.timer = setInterval(() => {
+						var _left = ele.offsetLeft; //左侧距离//获取当前距离
+		
+						var tween = (end - _left) / 10; //减速运动
+						tween = tween > 0 ? Math.ceil(tween) : Math.floor(tween); //三元判断 向上、向下取整
+						var start = _left + tween;
+						if (ele.offsetLeft <= end) { //判断临界条件停止
+							clearInterval(ele.timer);
+							ele.style.left = end + "px";
+						}
+						ele.style.left = start + 'px';
+					}, 30); //图片轮播速度
+				} else if (dir == "left") {
+					clearInterval(ele.timer);
+					ele.timer = setInterval(() => {
+						var _right = ele.offsetLeft;
+						var tween1 = (end - _right) / 10;
+						tween1 = tween1 > 0 ? Math.ceil(tween1) : Math.floor(tween1);
+						var start1 = _right + tween1;
+						// ele.style.left = _right + 10 + "px";
+						if (ele.offsetLeft >= end) {
+							clearInterval(ele.timer);
+							ele.style.left = end + "px";
+						}
+						ele.style.left = start1 + 'px';
+					}, 30);
+				}
+			}
+			for (let k = 0; k < pp.length; k++) {
+				pp[k].onclick = function() { //页码绑定点击事件
+					move(lunbo, k > i ? "right" : "left", -1226 * k);
+					i = k;
+					fn2();
+				};
+			}
+		
+			function fn2() {
+				for (var n = 0; n < pp.length; n++) {
+					pp[n].style.background = "rgba(255, 255, 255, 0.5)";
+				}
+				pp[i === 4 ? 0 : i].style.background = "rgba(255, 255, 255, 1)";
+			} //页码样式设置
+		</script>
+	</body>
+</html>

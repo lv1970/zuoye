@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>登录</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			font-family: "微软雅黑";
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: none;
+			list-style: none;
+		}
+
+		#head {
+			width: 1130px;
+			height: 98px;
+			margin: 0 auto;
+		}
+
+		#head1 {
+			width: 200px;
+			height: 98px;
+		}
+
+		#zhuti {
+			width: 1920px;
+			height: 588px;
+			background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e8201bfbb8c9d474a48da76f7d81a5c7.jpg)no-repeat;
+			background-position: -520px 0px;
+			margin: 0 auto;
+		}
+
+		.biaodan {
+			width: 410px;
+			height: 556px;
+			position: relative;
+			top: 50px;
+			left: 920px;
+			background: #fff;
+			float: left;
+		}
+
+		.tou {
+			width: 410px;
+			height: 92px;
+		}
+
+		.tou1 {
+			width: 348px;
+			height: 29px;
+			margin-top: 29px;
+			margin-left: 31px;
+		}
+
+		.tou2 {
+			width: 173px;
+			height: 29px;
+			float: left;
+			color: #f56600;
+			font-size: 23px;
+			line-height: 29px;
+			text-align: center;
+			border-right: 2px solid #e0e0e0;
+		}
+
+		.tou3 {
+			width: 173px;
+			height: 29px;
+			float: left;
+			color: #666666;
+			font-size: 23px;
+			line-height: 29px;
+			text-align: center;
+		}
+
+		.box {
+			width: 350px;
+			height: 190px;
+			margin: 0 auto;
+			margin-top: -25px;
+		}
+
+		#username {
+			width: 346px;
+			height: 48px;
+			border: 1px solid #e0e0e0;
+			font-size: 14px;
+			color: #9b9b9b;
+			text-indent: 15px;
+			margin-bottom: 14px;
+		}
+
+		#password {
+			width: 346px;
+			height: 48px;
+			border: 1px solid #e0e0e0;
+			font-size: 14px;
+			color: #9b9b9b;
+			text-indent: 15px;
+			margin-bottom: 24px;
+		}
+
+		#anniu {
+			width: 348px;
+			height: 50px;
+			background: #ff6700;
+			color: white;
+			font-size: 14px;
+			border: none;
+		}
+
+		#shouji {
+			width: 348px;
+			height: 38px;
+			margin: 0 auto;
+		}
+
+		.zuo {
+			width: 174px;
+			height: 38px;
+			float: left;
+			color: #ff6700;
+			font-size: 14px;
+			line-height: 38px;
+		}
+
+		.you {
+			width: 174px;
+			height: 38px;
+			float: left;
+			color: #999999;
+			font-size: 14px;
+			line-height: 38px;
+			text-indent: 30px;
+		}
+
+		#tupian {
+			width: 348px;
+			height: 59px;
+			margin: 110px auto;
+		}
+		.fot {
+				width: 705px;
+				height: 108px;
+				margin: 30px auto;
+			
+			}
+
+			.fot1 {
+				width: 333px;
+				height: 47px;
+				margin: 0 auto;
+				
+			}
+
+			.fot2 {
+				float: left;
+				text-align: center;
+				font-size: 17px;
+				color: #333333;
+				line-height: 18px;
+				width: 68px;
+				height: 18px;
+				border-right: 1px solid #b59d9d;
+				margin-top: 15px;
+				cursor:pointer;
+			}
+			.fot3 {
+				float: left;
+				text-align: center;
+				font-size: 17px;
+				color: #757575;
+				line-height: 18px;
+				width: 68px;
+				height: 18px;
+				border-right: 1px solid #b59d9d;
+				margin-top: 15px;
+				cursor:pointer;
+			}
+			.fot4 {
+				float: left;
+				text-align: center;
+				font-size: 17px;
+				color: #757575;
+				line-height: 18px;
+				width: 96px;
+				height: 18px;
+				border-right: 1px solid #b59d9d;
+				margin-top: 15px;
+				cursor:pointer;
+			}
+			.fot3:hover{color: #333;}
+			.fot4:hover{color: #333;}
+	</style>
+</head>
+
+<body>
+	<div id="head">
+		<img src="https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png"
+			alt="" id="head1">
+	</div>
+	<div id="zhuti">
+		<div class="biaodan">
+			<div class="tou">
+				<div class="tou1">
+					<div class="tou2">
+						账号登录
+					</div>
+					<div class="tou3">
+						扫码登录
+					</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<form id="myform">
+					<div class="row">
+						<label for="username"></label>
+						<input type="text" name="username" id="username" placeholder="邮箱/手机号码/小米ID" required />
+					</div>
+					<div class="row">
+						<label for="password"></label>
+						<input type="password" name="password" id="password" placeholder="密码" required />
+					</div>
+					<div class="row">
+						<button id="anniu">登录</button>
+					</div>
+				</form>
+			</div>
+			<div id="shouji">
+				<span class="zuo">手机短信登录/注册</span>
+				<span class="you">立即注册丨忘记密码？</span>
+			</div>
+			<div id="tupian">
+				<img src="../img/denglufang.png" alt="">
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+	<div class="fot">
+		<div class="fot1">
+			<div class="fot2">
+				简体
+			</div>
+			<div class="fot3">
+				繁体
+			</div>
+			<div class="fot4">
+				English
+			</div>
+			<div class="fot4">
+				常见问题
+			</div>
+		</div>
+		<img src="../img/yanzheghao.png" >
+	</div>
+
+
+	<script src="./ajax-1.1.2.js"></script>
+	<script src="./cookie-0.1.1.js"></script>
+	<script>
+		var formEle = document.getElementById('myform');
+
+		formEle.onsubmit = function (e) {
+			e.preventDefault();
+
+			var username = this.username.value;
+			var password = this.password.value;
+
+			ajax({
+				type: 'post',
+				url: 'login.php',
+				data: { username, password }
+			}).then(res => {
+				alert(res.msg);
+				if (res.code == 2) {
+					// logged true
+					cookie('logged', true, { maxAge: 30 * 60 });
+					location = '/wode.html'; // 登录成功后，跳转到主页
+				}
+			});
+		};
+	</script>
+</body>
+
+</html>
